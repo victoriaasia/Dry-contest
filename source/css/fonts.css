@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'mp-black-cn';
+	src: url('fonts/mp-black-cn/mp-black-cn.eot');
+	src: local('☺'), url('fonts/mp-black-cn/mp-black-cn.woff') format('woff'), url('fonts/mp-black-cn/mp-black-cn.ttf') format('truetype'), url('fonts/mp-black-cn/mp-black-cn.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'k-reg';
+	src: url('fonts/k-reg/k-reg.eot');
+	src: local('☺'), url('fonts/k-reg/k-reg.woff') format('woff'), url('fonts/k-reg/k-reg.ttf') format('truetype'), url('fonts/k-reg/k-reg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'k-med';
+	src: url('fonts/k-med/k-med.eot');
+	src: local('☺'), url('fonts/k-med/k-med.woff') format('woff'), url('fonts/k-med/k-med.ttf') format('truetype'), url('fonts/k-med/k-med.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'k-bold';
+	src: url('fonts/k-bold/k-bold.eot');
+	src: local('☺'), url('fonts/k-bold/k-bold.woff') format('woff'), url('fonts/k-bold/k-bold.ttf') format('truetype'), url('fonts/k-bold/k-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'k-black';
+	src: url('fonts/k-black/k-black.eot');
+	src: local('☺'), url('fonts/k-black/k-black.woff') format('woff'), url('fonts/k-black/k-black.ttf') format('truetype'), url('fonts/k-black/k-black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

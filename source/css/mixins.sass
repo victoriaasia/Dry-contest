@@ -1,0 +1,30 @@
+@mixin linear-gradient($args...)
+  background: linear-gradient($args)
+
+@mixin transition($args...)
+  transition: $args
+
+$browser-context: 16
+@function em($pixels, $context: $browser-context)
+  @return #{$pixels/$context}em
+
+
+@mixin bp-table
+  @media screen and (max-width: 768px)
+    @content
+
+@mixin bp-table-portrait
+  @media screen and (max-device-width: 768px) and (orientation: portrait)
+    @content
+
+@mixin bp-min-556
+  @media screen and (min-width: 556px) and (max-width: 768px)
+    @content
+
+@mixin bp-max-600
+  @media screen and (min-width: 320px) and (max-width: 599px)
+    @content
+
+@mixin bp-max-480
+  @media screen and (min-width: 320px) and (max-width: 480px)
+    @content
