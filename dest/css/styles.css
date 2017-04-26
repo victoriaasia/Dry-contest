@@ -168,7 +168,8 @@
     .c-prizes {
       width: 98%; }
       .c-prizes .c-prizes__content {
-        display: block; } }
+        display: block;
+        padding-bottom: 15px; } }
   .c-prizes__items {
     width: 75%;
     margin: 0 auto;
@@ -211,21 +212,24 @@
         width: 100%; }
   .c-prizes__content {
     display: none; }
-  .c-prizes__content > p {
-    position: relative;
-    display: none;
-    font-size: 5vw;
-    font-family: "mp-black-cn";
-    color: #898989;
-    text-transform: uppercase;
-    line-height: 1;
-    text-align: center;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    @media screen and (max-width: 768px) {
-      .c-prizes__content > p {
-        display: block; } }
+  .c-prizes__content {
+    padding: 30px 0px; }
+    .c-prizes__content > p {
+      display: none;
+      position: relative;
+      padding-bottom: 10px;
+      font-size: 5vw;
+      font-family: "mp-black-cn";
+      color: #898989;
+      text-transform: uppercase;
+      line-height: 1;
+      text-align: center;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      @media screen and (max-width: 768px) {
+        .c-prizes__content > p {
+          display: block; } }
   .c-prizes__img {
     max-width: 640px;
     height: 275px;
@@ -240,6 +244,9 @@
   .c-prizes__text {
     width: 80%;
     margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .c-prizes__text {
+        width: 95%; } }
     .c-prizes__text p {
       font-size: 14px;
       font-family: "m-reg";
@@ -253,7 +260,6 @@
     .c-prizes__text span {
       font-family: "m-bold"; }
   .c-prizes__content.current {
-    padding: 30px 0px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -272,10 +278,8 @@
     -ms-flex-pack: center;
     justify-content: center; }
     @media screen and (max-width: 768px) {
-      .c-prizes__content.current {
-        padding: 0; }
-        .c-prizes__content.current > p {
-          color: #ff6831; } }
+      .c-prizes__content.current > p {
+        color: #ff6831; } }
 
 .c-intro {
   background: url("../assets/img/bg-intro.jpg") no-repeat;

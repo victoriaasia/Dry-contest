@@ -105,6 +105,7 @@
     width: 98%
     .c-prizes__content
       display: block
+      padding-bottom: 15px
   &__items
     width: 75%
     margin: 0 auto
@@ -137,9 +138,11 @@
   &__content
   	display: none
   &__content
+    padding: 30px 0px
     > p
-      position: relative
       display: none
+      position: relative
+      padding-bottom: 10px     
       font-size: 5vw
       font-family: "mp-black-cn"
       color: $grey
@@ -163,6 +166,8 @@
   &__text
     width: 80%
     margin: 0 auto
+    @include bp-table
+      width: 95%
     p
       font-size: 14px
       font-family: "m-reg"
@@ -175,13 +180,11 @@
     span
       font-family: "m-bold"
   &__content.current
-      padding: 30px 0px
       display: flex
       flex-direction: column
       align-items: center
       justify-content: center
       @include bp-table
-        padding: 0
         > p
           color: $orange
 
