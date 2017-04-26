@@ -105,7 +105,6 @@
     width: 98%
     .c-prizes__content
       display: block
-      padding-bottom: 15px
   &__items
     width: 75%
     margin: 0 auto
@@ -139,10 +138,12 @@
   	display: none
   &__content
     padding: 30px 0px
+    @include bp-table
+      padding: 3vw 0px
     > p
       display: none
       position: relative
-      padding-bottom: 10px     
+      padding-bottom: 10px
       font-size: 5vw
       font-family: "mp-black-cn"
       color: $grey
