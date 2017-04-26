@@ -69,7 +69,6 @@
     display: flex
     flex-direction: column
     padding: 20px 30px
-
     input
       width: 100%
       margin-bottom: 20px
@@ -82,6 +81,7 @@
       border: 0
       outline: 0
       border-bottom: 1px solid #b73a3e
+      border-radius: 0
       &:focus
         border-color: $blue
         box-shadow: 1px 1px 0px 0px rgba(20, 214, 255, 0.05)
@@ -199,6 +199,7 @@
     background: $orange
     border: 0
     outline: 0
+    border-radius: 0
     padding: 15px 3%
     color: #fff
     font-size: 18px
@@ -710,49 +711,49 @@
     background-size: 500px
 .c-vk
   background-position: -375px 0
-  &:hover
+  &:hover, &.c-icon-hover
     background-position: -440px 0
   @include bp-table
     background-position: -494px 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -577px 0
   @include bp-max-480
     background-position: -375px 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -440px 0
 .c-fb
   background-position: 0 0
-  &:hover
+  &:hover, &.c-icon-hover
     background-position: -62px 0
   @include bp-table
     background-position: 0 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -82px 0
   @include bp-max-480
     background-position: 0 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -62px 0
 .c-tw
   background-position: -250px 0
-  &:hover
+  &:hover, &.c-icon-hover
     background-position: -312px 0
   @include bp-table
     background-position: -330px 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -412px 0
   @include bp-max-480
     background-position: -250px 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -312px 0
 .c-ok
   background-position: -125px 0
-  &:hover
+  &:hover, &.c-icon-hover
     background-position: -188px 0
   @include bp-table
     background-position: -165px 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -248px 0
   @include bp-max-480
     background-position: -125px 0
-    &:hover
+    &:hover, &.c-icon-hover
       background-position: -188px 0
