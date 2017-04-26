@@ -448,6 +448,9 @@
     .c-adv__text span, .c-adv__text a {
       font-family: "k-reg";
       color: #ff6831; }
+      @media screen and (max-width: 768px) {
+        .c-adv__text span, .c-adv__text a {
+          font-family: "k-bold"; } }
 
 .c-photo {
   margin-top: 20px; }
