@@ -444,9 +444,7 @@
     @media screen and (max-width: 768px) {
       .c-adv__text {
         text-align: left;
-        font-size: 4vw; }
-        .c-adv__text br {
-          display: none; } }
+        font-size: 4vw; } }
     .c-adv__text span, .c-adv__text a {
       font-family: "k-reg";
       color: #ff6831; }
