@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dry-pop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="p-wrapper">
+  <div class="p-container">
+
+<span class="p-close"></span>
+<div class="p-prizes">
+
+  <ul class="p-prizes__items js-p-items">
+    <li class="p-prizes__link current" data-tab="p-tab-1">1 место</li>
+    <li class="p-prizes__link" data-tab="p-tab-2">2 место</li>
+    <li class="p-prizes__link" data-tab="p-tab-3">3 место</li>
+    <li class="p-prizes__link" data-tab="p-tab-4">4 место</li>
+  </ul>
+
+  <div class="p-prizes__content js-p-content current" id="p-tab-1">
+    <div class="p-prizes__img"><img src="assets/img/prize1.png" alt=""></div>
+    <div class="p-prizes__text">
+      <p>подарочный набор продукции (<span>Dry Dry Foot Spray, Dry Dry Classic, Dry Dry Shampoo, Dry Dry Balsam, Dry Dry Gel, Dry Dry Sensitive, Dry Dry салфетки разового применения, Dry Dry Light</span>)</p>
+      <p>брендированный чехол для чемодана</p>
+      <p><span>сертификат на 10 000 рублей</span> в парфюмерно-косметический магазин</p>
+    </div>
+  </div>
+
+  <div class="p-prizes__content js-p-content" id="p-tab-2">
+    <div class="p-prizes__img"><img src="assets/img/prize2.png" alt=""></div>
+    <div class="p-prizes__text">
+      <p>подарочный набор продукции (<span>(Dry Dry Foot Spray, Dry Dry Classic, Dry Dry Shampoo, Dry Dry Balsam, Dry Dry Gel</span>)</p>
+      <p><span>сертификат на 5 000 рублей</span> в парфюмерно-косметический магазин</p>
+    </div>
+  </div>
+
+  <div class="p-prizes__content js-p-content" id="p-tab-3">
+    <div class="p-prizes__img"><img src="assets/img/prize3.png" alt=""></div>
+    <div class="p-prizes__text">
+      <p>подарочный набор продукции (<span>(Dry Dry Foot Spray, Dry Dry Classic, Dry Dry Shampoo, Dry Dry Balsam, Dry Dry Gel</span>)</p>
+      <p><span>сертификат на 3 000 рублей</span> в парфюмерно-косметический магазин</p>
+    </div>
+  </div>
+
+  <div class="p-prizes__content js-p-content" id="p-tab-4">
+    <div class="p-prizes__img"><img src="assets/img/prize4.png" alt=""></div>
+    <div class="p-prizes__text">
+      <p>подарочный набор продукции (<span>(Dry Dry Foot Spray, Dry Dry Classic, Dry Dry Shampoo, Dry Dry Balsam, Dry Dry Gel</span>)</p>
+      <p><span>сертификат на 2 000 рублей</span> в парфюмерно-косметический магазин</p>
+    </div>
+  </div>
+
+
+</div>
+
+
+</div>
+</div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script>
+
+$('.js-p-items li').on('click mouseenter', function () {
+  var tab_id = $(this).attr('data-tab');
+  $('.js-p-items li').removeClass('current');
+  $('.js-p-content').removeClass('current');
+  $(this).addClass('current');
+  $("#"+tab_id).addClass('current');
+});
+
+</script>
+</body>
+</html>
