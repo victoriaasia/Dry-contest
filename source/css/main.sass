@@ -35,11 +35,153 @@
   @include bp-table
     font-size: 4vw
 
-.c-modal
-  position: absolute
+
+.c-modal-prizes
   width: 980px
   height: 601px
-  margin: 0 auto
+  display: none
+  @include bp-table
+    width: 100%
+    height: 100%
+
+.c-modal-reg
+  width: 400px
+  &__auth
+    padding: 5px 0 1px
+  &__title
+    font-size: 16px
+    font-family: 'k-bold'
+    line-height: 1.3
+    color: $darkGrey
+    text-transform: uppercase
+    text-align: center
+    @include bp-table
+      font-size: 4vw
+  &__social
+    display: flex
+    align-items: center
+    justify-content: center
+  &__content
+    padding: 25px 40px
+    @include bp-table
+      padding: 30px 3px
+  &__inner
+    display: flex
+    flex-direction: column
+    padding: 20px 30px
+
+    input
+      width: 100%
+      margin-bottom: 20px
+      text-align: center
+      font-size: 16px
+      font-family: "k-reg"
+      color: rgba(0, 0, 0, 0.6)
+      background: #fff
+      line-height: 1.5
+      border: 0
+      outline: 0
+      border-bottom: 1px solid #b73a3e
+      &:focus
+        border-color: $blue
+        box-shadow: 1px 1px 0px 0px rgba(20, 214, 255, 0.05)
+        color: #000
+        &::-webkit-input-placeholder
+          color: #000
+        &::-moz-placeholder
+          color: #000
+        &:-moz-placeholder
+          color: #000
+        &:-ms-input-placeholder
+          color: #000
+      &.input-ok
+        border-color: #000
+
+.c-modal-photo
+  width: 400px
+  &__content
+    padding: 45px 65px
+    @include bp-table
+      padding: 60px 3px
+  &__btn
+    position: relative
+    height: 270px
+    background: url('../assets/img/up.png') no-repeat
+    background-size: 100%
+    margin-bottom: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    @include bp-table
+      height: 90vw
+      width: 90vw
+      margin: 0 auto 30px
+    span
+      font-size: 24px
+      font-family: "k-bold"
+      color: #fff
+      text-transform: uppercase
+      line-height: 1.364
+  &__input
+    position: absolute
+    top: 0
+    left: 0
+    cursor: pointer
+    z-index: 99
+    outline: 0
+    width: 100%
+    height: 100%
+    opacity: 0
+
+.c-modal-final
+  width: 400px
+  &__content
+    padding: 45px 0
+    text-align: center
+    p
+      margin: 0
+  &__title
+    font-size: 16px
+    font-family: 'k-bold'
+    line-height: 1.3
+    color: #000
+    text-transform: uppercase
+    text-align: center
+    padding-bottom: 15px
+    @include bp-table
+      font-size: 4vw
+  &__subtitle
+    font-size: 16px
+    font-family: 'k-reg'
+    line-height: 2.711
+    text-align: center
+    @include bp-table
+      font-size: 3.5vw
+  &__sale
+    background: #424242
+    padding: 15px 0
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 30px
+    span
+      font-size: 21px
+      font-family: Geometria, sans-serif
+      font-weight: bold
+      color: #fff
+      text-transform: uppercase
+      line-height: 2.066
+      @include bp-table
+        font-size: 5vw
+  .c-modal__btn
+    display: inline-block
+    width: 70%
+
+.c-modal
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
   background: #fff
   overflow: hidden
   box-shadow: 0px 7px 15px 0px rgba(21, 21, 21, 0.75)
@@ -49,6 +191,28 @@
     width: 100%
     height: auto
     box-shadow: none
+  &__btn
+    position: relative
+    display: block
+    min-width: 80%
+    margin: 0 auto
+    background: $orange
+    border: 0
+    outline: 0
+    padding: 15px 3%
+    color: #fff
+    font-size: 18px
+    font-family: "k-bold"
+    text-transform: uppercase
+    white-space: nowrap
+    text-decoration: none
+    cursor: pointer
+    z-index: 999
+    @include transition(all 0.3s ease)
+    @include bp-table
+      font-size: 4vw
+    &:hover
+      background: darken($orange, 10%)
   &-wrapper
     position: relative
     width: 100%
@@ -92,6 +256,7 @@
   top: 15px
   right: 15px
   cursor: pointer
+  z-index: 9999
   @include bp-table
     width: 30px
     height: 30px
@@ -295,7 +460,7 @@
     letter-spacing: 1.5px
     @include bp-table
       text-align: left
-      font-size: 4vw      
+      font-size: 4vw
     span, a
       font-family: "k-reg"
       color: $orange
@@ -303,70 +468,55 @@
         font-family: "k-bold"
 .c-photo
   margin-top: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: $orange
+  width: 100%
+  height: 80px
+  color: #fff
+  text-decoration: none
+  outline: none
+  position: relative
+  cursor: pointer
+  z-index: 1
   @include bp-table
+    height: auto
+    padding: 7vw 0
     margin-top: 0
-  form
-    width: 100%
-  &__btn
-    display: flex
-    align-items: center
-    justify-content: center
-    background: $orange
-    width: 100%
-    height: 80px
-    color: #fff
-    text-decoration: none
-    outline: none
+  &::after
+    content: ''
+    position: absolute
+    bottom: -25px
+    left: 50%
+    transform: translateX(-50%)
+    width: 0
+    height: 0
+    border-left: 20px solid transparent
+    border-right: 20px solid transparent
+    border-top: 25px solid $orange
+  span
+    font-size: 19px
+    font-family: "k-bold"
+    text-transform: uppercase
     position: relative
-    cursor: pointer
-    z-index: 1
     @include bp-table
-      height: auto
-      padding: 7vw 0
-    &::after
+      font-size: 4.5vw
+    &::before
       content: ''
       position: absolute
-      bottom: -25px
-      left: 50%
-      transform: translateX(-50%)
-      width: 0
-      height: 0
-      border-left: 20px solid transparent
-      border-right: 20px solid transparent
-      border-top: 25px solid $orange
-    span
-      font-size: 19px
-      font-family: "k-bold"
-      text-transform: uppercase
-      position: relative
+      background: url('../assets/img/photo.png') no-repeat
+      background-size: contain
+      background-position: center
+      width: 50px
+      height: 35px
+      left: -70px
+      top: 50%
+      transform: translateY(-50%)
       @include bp-table
-        font-size: 4.5vw
-      &::before
-        content: ''
-        position: absolute
-        background: url('../assets/img/photo.png') no-repeat
-        background-size: contain
-        background-position: center
-        width: 50px
-        height: 35px
-        left: -70px
-        top: 50%
-        transform: translateY(-50%)
-        @include bp-table
-          width: 10vw
-          height: 8vw
-          left: -15vw
-  &__input
-    position: absolute
-    top: 0
-    left: 0
-    cursor: pointer
-    opacity: 0
-    filter: alpha(opacity=0)
-    z-index: 99
-    outline: 0
-    width: 100%
-    height: 100%
+        width: 10vw
+        height: 8vw
+        left: -15vw
 
 .c-main-content
   background: $lightGrey
@@ -522,7 +672,6 @@
       content: '>'
       right: -10px
 
-
 .c-footer
   padding: 5px 0 45px
   @include bp-table
@@ -539,6 +688,9 @@
     display: flex
     align-items: center
     justify-content: center
+
+
+
 .c-social-icon
   display: block
   background: url('../assets/img/socials.png') no-repeat

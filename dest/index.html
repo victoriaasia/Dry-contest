@@ -13,7 +13,7 @@
 
 <main class="c-main">
 
-  <section class="c-block c-intro">
+  <section class="c-intro">
     <div class="c-intro__content">
       <h2 class="c-title"></h2>
       <p class="c-text">Разместите фотографии, иллюстрирующие ваш активный образ жизни, и приглашайте друзей голосовать за вашу конкурсную работу!</p>
@@ -24,7 +24,7 @@
     </div>
   </section>
 
-  <section class="c-block c-adv">
+  <section class="c-adv">
     <div>
       <div class="c-adv__sale"><img src="assets/img/sale.png" alt=""></div>
       <p class="c-adv__text">Каждый участник конкурса получает <span>скидку 25%</span> на весь<br> ассортимент при оформлении заказа через сайт <a href="www.drydry.ru">www.drydry.ru</a></p>
@@ -35,13 +35,8 @@
     </div>
   </section>
 
-  <section class="c-photo">
-    <form method="post" enctype="multipart/form-data" class="form">
-			<a class="c-photo__btn">
-  				<span>Загрузить фото</span>
-				<input class="c-photo__input" type="file" title="Загрузить фото" name="photo" value="photo">
-			</a>
-		</form>
+  <section class="c-photo js-c-photo">
+  		<span>Загрузить фото</span>
   </section>
 
   <section class="c-main-content">
@@ -156,9 +151,9 @@
 
 
 
-<div class="c-modal js-c-modal">
+<div class="c-modal c-modal-prizes js-c-modal-prize">
   <div class="c-modal-wrapper">
-    <span class="c-close js-c-close"></span>
+    <span class="c-close js-c-close-prize"></span>
     <div class="c-prizes">
       <ul class="c-prizes__items js-c-items">
         <li class="c-prizes__link current" data-tab="c-tab-1">1 место</li>
@@ -207,6 +202,60 @@
 
   </div>
 </div>
+
+<div  class="c-modal js-c-modal c-modal-reg js-c-modal-reg">
+  <span class="c-close js-c-close js-c-close-reg"></span>
+	<div class="c-modal-reg__content">
+    <div class="c-modal-reg__auth">
+      <p class="c-modal-reg__title">ЧТОБЫ УЧАСТВОВАТЬ В КОНКУРСЕ,  ПРОЙДИТЕ АВТОРИЗАЦИЮ</p>
+      <div class="c-modal-reg__social">
+        <a href="" class="c-social-icon c-vk"></a>
+        <a href="" class="c-social-icon c-fb"></a>
+        <a href="" class="c-social-icon c-tw"></a>
+        <a href="" class="c-social-icon c-ok"></a>
+      </div>
+    </div>
+
+		<form action="" method="POST" id='jsForm1' class="c-modal-reg__form" enctype="multipart/form-data">
+
+			<div class="c-modal-reg__inner js-c-form">
+				<input type="text" name="name" placeholder="Имя" required="true">
+				<input type="text" name="surname" placeholder="Город" required="true">
+				<input type="email" name="email" placeholder="E-mail" required="true">
+			</div>
+
+		<input type="submit" class="c-modal__btn" value="Отправить"/>
+		</form>
+
+	</div>
+</div>
+
+<div class="c-modal js-c-modal c-modal-photo js-c-modal-photo">
+	<div class="c-modal-photo__content">
+	<span class="c-close js-c-close js-c-close-photo"></span>
+
+    <form action="" method="POST" id='jsForm2' enctype="multipart/form-data" class="form">
+    	<div class="c-modal-photo__btn">
+    		<span>Загрузите<br>фото</span>
+    		<input class="c-modal-photo__input" type="file" title="Загрузите фото" name="photo" value="photo">
+    	</div>
+    <input type="submit" class="c-modal__btn" value="Отправить"/>
+    </form>
+
+	</div>
+</div>
+
+<div class="c-modal js-c-modal c-modal-final js-c-modal-final">
+	<div class="c-modal-final__content">
+	<span class="c-close js-c-close js-c-close-final"></span>
+    <p class="c-modal-final__title">спасибо, ваша работа<br> успешно загружена!</p>
+    <p class="c-modal-final__subtitle">Ваш промокод на скидку 25%</p>
+    <div class="c-modal-final__sale"><span>WOMANDRY2017</span></div>
+    <a href="" class="c-modal__btn">Использовать скидку</a>
+	</div>
+</div>
+
+
 <div class="c-overlay"></div>
 </main>
 
