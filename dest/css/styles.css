@@ -259,14 +259,7 @@
       .c-prizes__content.current {
         padding: 0; }
         .c-prizes__content.current > p {
-          color: #ff6831; }
-          .c-prizes__content.current > p::after {
-            content: '';
-            position: absolute;
-            border-bottom: 1px solid #ff6831;
-            bottom: -3px;
-            left: 0;
-            width: 100%; } }
+          color: #ff6831; } }
 
 .c-intro {
   background: url("../assets/img/bg-intro.jpg") no-repeat;
