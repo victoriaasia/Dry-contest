@@ -37,3 +37,21 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "m-reg";
+	src: url('fonts/myriad-reg/MyriadProRegular.eot');
+	src: local('☺'), url('fonts/myriad-reg/MyriadProRegular.woff') format('woff'), url('fonts/myriad-reg/MyriadProRegular.ttf') format('truetype'), url('fonts/myriad-reg/MyriadProRegular.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "m-bold";
+	src: url('fonts/myriad-bold/MyriadProBold.eot');
+	src: local('☺'), url('fonts/myriad-bold/MyriadProBold.woff') format('woff'), url('fonts/myriad-bold/MyriadProBold.ttf') format('truetype'), url('fonts/myriad-bold/MyriadProBold.otf') format('otf');
+	font-weight: normal;
+	font-style: normal;
+	font-weight: normal;
+}
